@@ -2,22 +2,43 @@
 
 An AI agent skill that provides comprehensive rules, best practices, and component-specific guidance for building UIs with **Mantine v8**.
 
-## What's Inside
+## Structure
 
-- **SKILL.md** — entry point with general rules, theme tokens, styling priority, and category index
-- **best-practices.md** — styling priority guide (props → Style props → CSS Modules → `style`)
-- **8 component categories**, each with a README and per-component files:
-
-| Category | Components |
-|----------|------------|
-| **Layout** | Container, Grid, SimpleGrid, Stack, Group, Flex, Box, AppShell, Paper, Card, Center, Space, Divider |
-| **Typography** | Text, Title, Anchor, Code, Highlight, TypographyStylesProvider |
-| **Inputs & Buttons** | Button, ActionIcon, TextInput, Textarea, Select, MultiSelect, TagsInput, NumberInput, Checkbox, Switch |
-| **Data Display** | Table, Badge, Image, Avatar, ThemeIcon, Timeline, Indicator, List, Accordion |
-| **Navigation** | NavLink, Breadcrumbs, Burger, Menu, Tabs, Pagination, Stepper |
-| **Feedback** | Alert, Notification, Loader, LoadingOverlay, Skeleton, Progress |
-| **Overlays** | Modal, Drawer, Popover, Tooltip, HoverCard |
-| **Hooks** | useDisclosure, useDebouncedValue, useMediaQuery, useClickOutside, useIntersection, useHotkeys |
+```
+SKILL.md                           # Entry point — categories, quick reference, theme tokens
+rules/
+  _sections.md                     # Section definitions and descriptions
+  _template.md                     # Template for new component rules
+  best-practices.md                # Styling priority, Styles API, responsive, CSS variables
+  layout/
+    README.md                      # Decision tree: Stack vs Group vs Flex, Grid vs SimpleGrid
+    container.md, grid.md, simple-grid.md, stack.md, group.md, flex.md,
+    box.md, app-shell.md, paper.md, card.md, center.md, space.md, divider.md
+  typography/
+    README.md                      # Decision tree for text components
+    text.md, title.md, anchor.md, code.md, highlight.md, typography-styles-provider.md
+  inputs/
+    README.md                      # Decision tree for inputs and buttons
+    button.md, action-icon.md, text-input.md, textarea.md, select.md,
+    multi-select.md, tags-input.md, number-input.md, checkbox.md, switch.md
+  data-display/
+    README.md                      # Decision tree for data display
+    table.md, badge.md, image.md, avatar.md, theme-icon.md, timeline.md,
+    indicator.md, list.md, accordion.md
+  navigation/
+    README.md                      # Decision tree for navigation
+    nav-link.md, breadcrumbs.md, burger.md, menu.md, tabs.md, pagination.md, stepper.md
+  feedback/
+    README.md                      # Decision tree for feedback
+    alert.md, notification.md, loader.md, loading-overlay.md, skeleton.md, progress.md
+  overlays/
+    README.md                      # Decision tree for overlays
+    modal.md, drawer.md, popover.md, tooltip.md, hover-card.md
+  hooks/
+    README.md                      # Decision tree for hooks
+    use-disclosure.md, use-debounced-value.md, use-media-query.md,
+    use-click-outside.md, use-intersection.md, use-hotkeys.md
+```
 
 ## Installation
 
@@ -39,7 +60,11 @@ git clone https://github.com/spotsccc/mantine-skill.git ~/.codex/skills/mantine
 
 ## Usage
 
-The agent reads `SKILL.md` as the entry point. From there it navigates to the relevant category README and then to component-specific files as needed. No manual intervention required — just work with Mantine components and the agent will reference the right guidelines.
+The agent reads `SKILL.md` as the entry point. From there it navigates to the relevant category `README.md` (decision tree) and then to component-specific rule files as needed.
+
+Each category directory contains:
+- **README.md** — decision tree for choosing the right component, comparison tables, common patterns
+- **Component files** — key props, rules/gotchas, and code examples
 
 ## License
 
