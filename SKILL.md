@@ -170,13 +170,41 @@ Read decision tree: [rules/hooks/README.md](rules/hooks/README.md)
 | Headings | `var(--mantine-h{1-6}-font-size)` | Title `order` |
 | Primary | `var(--mantine-primary-color-filled)` | `color` prop |
 
-## Next.js Pages Router
+## Next.js Integration
+
+### App Router (recommended)
+
+- `ColorSchemeScript` in root `layout.tsx` inside `<head>`
+- `MantineProvider` wrapping `{children}` in root `layout.tsx`
+- `@mantine/*` packages in `transpilePackages` (next.config)
+- Use `component={Link}` for Next.js Link (v13+)
+- All Mantine components are client components (`'use client'` already in entry points)
+- No additional client boundary needed — import and use directly in Server Components
+
+```tsx
+// app/layout.tsx
+import { ColorSchemeScript, MantineProvider } from '@mantine/core';
+import '@mantine/core/styles.css';
+
+export default function RootLayout({ children }: { children: React.ReactNode }) {
+  return (
+    <html lang="en" suppressHydrationWarning>
+      <head>
+        <ColorSchemeScript />
+      </head>
+      <body>
+        <MantineProvider>{children}</MantineProvider>
+      </body>
+    </html>
+  );
+}
+```
+
+### Pages Router
 
 - `ColorSchemeScript` in `_document.tsx`, `mantineHtmlProps` on `<Html>`
 - `MantineProvider` in `_app.tsx`
 - `@mantine/*` packages in `transpilePackages` (next.config)
-- Use `component={Link}` for Next.js Link (v13+)
-- All Mantine components are client components (`'use client'` already in entry points)
 
 ## How to Use
 
