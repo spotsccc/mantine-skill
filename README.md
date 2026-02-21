@@ -52,6 +52,18 @@ git clone https://github.com/spotsccc/mantine-skill.git ~/.cursor/skills/mantine
 
 The skill will be automatically picked up when the agent detects Mantine-related code.
 
+### Claude Code
+
+```bash
+# Personal level (available in all projects)
+git clone https://github.com/spotsccc/mantine-skill.git ~/.claude/skills/mantine
+
+# Or project level (available only in current project)
+git clone https://github.com/spotsccc/mantine-skill.git .claude/skills/mantine
+```
+
+The skill will be automatically loaded when Claude detects Mantine-related code in your project.
+
 ### Codex
 
 ```bash
