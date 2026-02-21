@@ -1,7 +1,7 @@
 # useDebouncedValue
 
-**Пакет:** `@mantine/hooks`  
-**Назначение:** Debounce изменения значения. Для controlled inputs (value prop).
+**Package:** `@mantine/hooks`
+Debounce value changes. For controlled inputs (value prop).
 
 ## API
 
@@ -9,18 +9,18 @@
 const [debounced, cancel] = useDebouncedValue(value, wait, options?);
 
 // options
-{ leading?: boolean }  // true — обновить сразу при первом изменении
+{ leading?: boolean }  // true — update immediately on first change
 ```
 
-## Правила
+## Rules
 
-- Использовать для search inputs — избежать лишних API-вызовов
-- `cancel()` — отменяет ожидающий debounce
-- `leading: true` — мгновенное обновление при первом изменении
-- Возвращает debounced value (не setter). Значение контролируется родителем
-- Отличается от `useDebouncedState`: даёт доступ к «сырому» значению, работает с props и controlled components
+- Use for search inputs — avoid unnecessary API calls
+- `cancel()` — cancels pending debounce
+- `leading: true` — immediate update on first change
+- Returns debounced value (not setter). Value is controlled by parent
+- Differs from `useDebouncedState`: provides access to raw value, works with props and controlled components
 
-## Пример
+## Example
 
 ```tsx
 import { useState, useEffect } from 'react';

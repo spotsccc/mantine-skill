@@ -15,20 +15,20 @@
 
 ## Rules and gotchas
 
-- **`aria-label` обязателен** — без него кнопка недоступна для assistive tech.
+- **`aria-label` is required** — without it the button is inaccessible to assistive tech.
 - Icon size is separate from button size — use `size` prop on Icon to match.
-- **`data-disabled`** — для ссылок (`component={Link}`) и Tooltip: `disabled` не работает на `<a>`, используй `data-disabled` + `preventDefault`.
-- **ActionIcon.Group** — для сгруппированных иконок с общим gap.
-- **`size="input-sm"`** — выравнивает высоту под TextInput/Select.
+- **`data-disabled`** — for links (`component={Link}`) and Tooltip: `disabled` doesn't work on `<a>`, use `data-disabled` + `preventDefault`.
+- **ActionIcon.Group** — for grouped icons with shared gap.
+- **`size="input-sm"`** — aligns height with TextInput/Select.
 
 ## Example
 
 ```tsx
-<ActionIcon variant="subtle" aria-label="Удалить">
+<ActionIcon variant="subtle" aria-label="Delete">
   <IconTrash size={18} />
 </ActionIcon>
 
-<ActionIcon size="input-md" aria-label="Поиск" loading={isSearching}>
+<ActionIcon size="input-md" aria-label="Search" loading={isSearching}>
   <IconSearch />
 </ActionIcon>
 ```

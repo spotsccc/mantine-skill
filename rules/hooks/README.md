@@ -2,11 +2,11 @@
 
 ## Decision tree
 
-| Нужно | Хук |
-|-------|-----|
+| Need | Hook |
+|------|------|
 | Boolean state (open/close/toggle) | [useDisclosure](use-disclosure.md) |
 | Debounce input value | [useDebouncedValue](use-debounced-value.md) |
-| Respond to viewport width | [useMediaQuery](use-media-query.md) — **не SSR-safe с Next.js!** |
+| Respond to viewport width | [useMediaQuery](use-media-query.md) — **NOT SSR-safe with Next.js!** |
 | Detect click outside element | [useClickOutside](use-click-outside.md) |
 | Observe element visibility | [useIntersection](use-intersection.md) |
 | Keyboard shortcuts | [useHotkeys](use-hotkeys.md) |
@@ -14,30 +14,30 @@
 ## Common patterns
 
 - **useDisclosure** — modals, drawers, burger menus, collapse panels
-- **useDebouncedValue** — search inputs (избегать лишних API-вызовов)
-- **useMediaQuery** — **не SSR-safe** → hydration mismatch в Next.js. Только для client-only компонентов (Tooltip props, Modal size). Для responsive layout — CSS-подходы: `hiddenFrom`/`visibleFrom`, responsive style props, CSS modules с breakpoints.
+- **useDebouncedValue** — search inputs (avoid unnecessary API calls)
+- **useMediaQuery** — **NOT SSR-safe** → hydration mismatch in Next.js. Only for client-only components (Tooltip props, Modal size). For responsive layout use CSS approaches: `hiddenFrom`/`visibleFrom`, responsive style props, CSS modules with breakpoints.
 
-**Важно:** предпочитать CSS-based responsive решения вместо useMediaQuery в SSR-приложениях.
+**Important:** Prefer CSS-based responsive solutions over useMediaQuery in SSR applications.
 
-## Другие полезные хуки
+## Other useful hooks
 
-| Хук | Назначение |
-|-----|------------|
-| useViewportSize, useElementSize, useResizeObserver | Размеры viewport/элемента |
-| useLocalStorage, useSessionStorage | Сохранение состояния |
-| useScrollIntoView | Плавная прокрутка |
-| useDebouncedCallback, useThrottledCallback | Throttling/debounce функции |
-| useHover | Состояние hover |
-| useMergedRef | Объединение нескольких refs |
-| useId | Стабильный уникальный ID |
-| usePagination | Логика пагинации |
+| Hook | Purpose |
+|------|---------|
+| useViewportSize, useElementSize, useResizeObserver | Viewport/element dimensions |
+| useLocalStorage, useSessionStorage | Persist state |
+| useScrollIntoView | Smooth scroll |
+| useDebouncedCallback, useThrottledCallback | Throttle/debounce functions |
+| useHover | Hover state |
+| useMergedRef | Merge multiple refs |
+| useId | Stable unique ID |
+| usePagination | Pagination logic |
 
-Документация: https://mantine.dev/hooks/
+Documentation: https://mantine.dev/hooks/
 
-## Файлы
+## Files
 
-| Хук | Файл |
-|-----|------|
+| Hook | File |
+|------|------|
 | useDisclosure | [use-disclosure.md](use-disclosure.md) |
 | useDebouncedValue | [use-debounced-value.md](use-debounced-value.md) |
 | useMediaQuery | [use-media-query.md](use-media-query.md) |

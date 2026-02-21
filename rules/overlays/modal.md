@@ -38,13 +38,13 @@
 ```tsx
 const [opened, { open, close }] = useDisclosure();
 
-<Modal opened={opened} onClose={close} title="Подтверждение" centered>
-  <Text>Вы уверены?</Text>
+<Modal opened={opened} onClose={close} title="Confirmation" centered>
+  <Text>Are you sure?</Text>
   <Group mt="md" justify="flex-end">
-    <Button variant="subtle" onClick={close}>Отмена</Button>
-    <Button onClick={handleConfirm}>ОК</Button>
+    <Button variant="subtle" onClick={close}>Cancel</Button>
+    <Button onClick={handleConfirm}>OK</Button>
   </Group>
 </Modal>
 
-<Button onClick={open}>Открыть</Button>
+<Button onClick={open}>Open</Button>
 ```

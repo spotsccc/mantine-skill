@@ -36,12 +36,12 @@
 ```tsx
 <Popover width="target" trapFocus>
   <Popover.Target>
-    <Button>Открыть</Button>
+    <Button>Open</Button>
   </Popover.Target>
   <Popover.Dropdown>
-    <TextInput label="Имя" placeholder="Введите..." />
-    <Select label="Роль" data={roles} />
-    <Button fullWidth mt="sm">Сохранить</Button>
+    <TextInput label="Name" placeholder="Enter..." />
+    <Select label="Role" data={roles} />
+    <Button fullWidth mt="sm">Save</Button>
   </Popover.Dropdown>
 </Popover>
 ```

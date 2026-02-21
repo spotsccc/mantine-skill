@@ -31,13 +31,13 @@
 ```tsx
 const [opened, { open, close }] = useDisclosure();
 
-<Drawer opened={opened} onClose={close} title="Фильтры" position="right" size="md">
+<Drawer opened={opened} onClose={close} title="Filters" position="right" size="md">
   <Stack>
-    <TextInput label="Поиск" placeholder="..." />
-    <Select label="Категория" data={categories} />
-    <Button onClick={close}>Применить</Button>
+    <TextInput label="Search" placeholder="..." />
+    <Select label="Category" data={categories} />
+    <Button onClick={close}>Apply</Button>
   </Stack>
 </Drawer>
 
-<Button onClick={open}>Фильтры</Button>
+<Button onClick={open}>Filters</Button>
 ```

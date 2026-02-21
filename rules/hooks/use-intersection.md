@@ -1,7 +1,7 @@
 # useIntersection
 
-**Пакет:** `@mantine/hooks`  
-**Назначение:** IntersectionObserver — пересечение элемента с viewport/контейнером.
+**Package:** `@mantine/hooks`
+IntersectionObserver — observe element intersection with viewport/container.
 
 ## API
 
@@ -12,15 +12,15 @@ const { ref, entry } = useIntersection(options?);
 { root?, rootMargin?, threshold? }
 ```
 
-## Правила
+## Rules
 
-- `ref` передавать наблюдаемому элементу
-- `entry?.isIntersecting` — элемент виден
-- Подходит для infinite scroll, lazy loading, scroll-spy
-- `threshold` — число 0–1 или массив для частичной видимости
-- На первом рендере и при SSR `entry === null`
+- Pass `ref` to the observed element
+- `entry?.isIntersecting` — element is visible
+- Suitable for infinite scroll, lazy loading, scroll-spy
+- `threshold` — number 0–1 or array for partial visibility
+- On first render and during SSR `entry === null`
 
-## Пример (lazy loading)
+## Example (lazy loading)
 
 ```tsx
 import { useState, useEffect } from 'react';

@@ -1,31 +1,31 @@
 # useHotkeys
 
-**Пакет:** `@mantine/hooks`  
-**Назначение:** Глобальные сочетания клавиш. Для element-scoped — `getHotkeyHandler`.
+**Package:** `@mantine/hooks`
+Global keyboard shortcuts. For element-scoped use `getHotkeyHandler`.
 
 ## API
 
 ```tsx
 useHotkeys(hotkeys, tagsToIgnore?, triggerOnContentEditable?);
 
-// hotkeys — массив кортежей [shortcut, handler]
+// hotkeys — array of tuples [shortcut, handler]
 // tagsToIgnore — default ['INPUT', 'TEXTAREA', 'SELECT']
 ```
 
-## Формат shortcuts
+## Shortcut format
 
-- `mod+K` — ⌘+K на Mac, Ctrl+K на Windows
-- `ctrl+shift+X`, `alt+Enter` — несколько модификаторов
-- `ArrowLeft`, `Digit1` — специальные клавиши (MDN Key Values)
+- `mod+K` — ⌘+K on Mac, Ctrl+K on Windows
+- `ctrl+shift+X`, `alt+Enter` — multiple modifiers
+- `ArrowLeft`, `Digit1` — special keys (MDN Key Values)
 
-## Правила
+## Rules
 
-- `mod` — кросс-платформенный модификатор
-- `tagsToIgnore` — не срабатывать при фокусе на form-элементах. Пустой массив `[]` — срабатывать везде
-- Глобальные shortcuts — `useHotkeys`. Локальные на элементе — `getHotkeyHandler` на `onKeyDown`
-- `HotkeyItemOptions`: `preventDefault`, `usePhysicalKeys` (для не-QWERTY раскладок)
+- `mod` — cross-platform modifier
+- `tagsToIgnore` — don't fire when focused on form elements. Empty array `[]` — fire everywhere
+- Global shortcuts — `useHotkeys`. Element-scoped — `getHotkeyHandler` on `onKeyDown`
+- `HotkeyItemOptions`: `preventDefault`, `usePhysicalKeys` (for non-QWERTY layouts)
 
-## Пример
+## Example
 
 ```tsx
 import { useHotkeys, useDisclosure } from '@mantine/hooks';

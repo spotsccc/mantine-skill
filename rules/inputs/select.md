@@ -21,7 +21,7 @@
 
 - **Values:** `data` values must be unique strings. For `{value, label}[]` — `value` is what gets stored.
 - **value/onChange** work with `string | null`, not objects.
-- **`nothingFoundMessage`** — set explicitly, e.g. `"Ничего не найдено"`, otherwise empty search hides dropdown.
+- **`nothingFoundMessage`** — set explicitly, e.g. `"Nothing found"`, otherwise empty search hides dropdown.
 - **`allowDeselect`** — lets user clear by clicking selected option again.
 - **Inside Popover:** pass `comboboxProps={{ withinPortal: false }}`.
 - **Groups:** `data: [{ group: 'A', items: [...] }, { group: 'B', items: [...] }]`.
@@ -30,11 +30,11 @@
 
 ```tsx
 <Select
-  label="Страна"
-  data={['Россия', 'Франция', 'Испания']}
+  label="Country"
+  data={['USA', 'France', 'Spain']}
   searchable
   clearable
-  nothingFoundMessage="Ничего не найдено"
+  nothingFoundMessage="Nothing found"
   value={country}
   onChange={setCountry}
 />

@@ -31,13 +31,13 @@
 ## Example
 
 ```tsx
-<Tooltip label="Сохранить" withArrow>
+<Tooltip label="Save" withArrow>
   <ActionIcon>
     <IconDeviceFloppy />
   </ActionIcon>
 </Tooltip>
 
-<Tooltip label="Длинный текст подсказки для сложного действия" multiline w={200}>
-  <Button>Подробнее</Button>
+<Tooltip label="Long tooltip text for a complex action" multiline w={200}>
+  <Button>Details</Button>
 </Tooltip>
 ```

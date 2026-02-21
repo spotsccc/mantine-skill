@@ -26,13 +26,13 @@
 
 ```tsx
 <MultiSelect
-  label="Категории"
+  label="Categories"
   data={categories}
   searchable
   hidePickedOptions
   maxValues={5}
   value={selected}
   onChange={setSelected}
-  nothingFoundMessage="Ничего не найдено"
+  nothingFoundMessage="Nothing found"
 />
 ```

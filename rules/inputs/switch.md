@@ -26,8 +26,8 @@
 
 ```tsx
 <Switch
-  label="Уведомления"
-  description="Получать email о новых статьях"
+  label="Notifications"
+  description="Receive email about new articles"
   checked={enabled}
   onChange={(e) => setEnabled(e.currentTarget.checked)}
 />

@@ -25,7 +25,7 @@
   <LoadingOverlay visible={isLoading} loaderProps={{ type: 'oval', size: 'lg' }} />
   <Paper p="md">
     <TextInput label="Email" />
-    <Button mt="md">Отправить</Button>
+    <Button mt="md">Submit</Button>
   </Paper>
 </Box>
 ```

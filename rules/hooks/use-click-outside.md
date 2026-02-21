@@ -1,24 +1,24 @@
 # useClickOutside
 
-**Пакет:** `@mantine/hooks`  
-**Назначение:** Обработка клика вне элемента.
+**Package:** `@mantine/hooks`
+Handle clicks outside an element.
 
 ## API
 
 ```tsx
 const ref = useClickOutside(handler, events?, nodes?);
 
-// events — массив событий, по умолчанию ['mousedown', 'touchstart']
-// nodes — массив refs элементов, которые не считаются "outside"
+// events — event array, defaults to ['mousedown', 'touchstart']
+// nodes — array of refs for elements that are not considered "outside"
 ```
 
-## Правила
+## Rules
 
-- Возвращаемый `ref` вешать на элемент, внутри которого клик считается «внутренним»
-- `nodes` — дополнительные refs, клик по которым не триггерит handler (например, dropdown + button). Для множественных узлов использовать `useState` для refs, т.к. `useRef` не даёт актуальные элементы при порталах
-- Порядок: `handler`, `events` (или `null` для default), `nodes`
+- Attach returned `ref` to the element inside which clicks are considered "inside"
+- `nodes` — additional refs where clicks don't trigger handler (e.g. dropdown + button). For multiple nodes use `useState` for refs, since `useRef` won't provide current elements with portals
+- Parameter order: `handler`, `events` (or `null` for defaults), `nodes`
 
-## Пример
+## Example
 
 ```tsx
 import { useState } from 'react';

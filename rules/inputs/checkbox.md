@@ -29,14 +29,14 @@
 
 ```tsx
 <Checkbox
-  label="Согласен с условиями"
+  label="I agree to the terms"
   error={errors.agree?.message}
   checked={checked}
   onChange={(e) => setChecked(e.currentTarget.checked)}
 />
 
 <Checkbox.Group value={selected} onChange={setSelected}>
-  <Checkbox value="a" label="Вариант A" />
-  <Checkbox value="b" label="Вариант B" />
+  <Checkbox value="a" label="Option A" />
+  <Checkbox value="b" label="Option B" />
 </Checkbox.Group>
 ```

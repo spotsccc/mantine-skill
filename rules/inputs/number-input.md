@@ -28,7 +28,7 @@
 
 ```tsx
 <NumberInput
-  label="Количество"
+  label="Quantity"
   min={1}
   max={100}
   step={1}

@@ -22,8 +22,8 @@
 
 ```tsx
 <Textarea
-  label="Описание"
-  placeholder="Введите текст..."
+  label="Description"
+  placeholder="Enter text..."
   autosize
   minRows={3}
   maxRows={10}

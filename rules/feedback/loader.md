@@ -25,6 +25,6 @@
 
 <Group>
   <Loader type="bars" size="sm" />
-  <Text>Загрузка...</Text>
+  <Text>Loading...</Text>
 </Group>
 ```

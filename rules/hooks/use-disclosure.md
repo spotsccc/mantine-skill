@@ -1,7 +1,7 @@
 # useDisclosure
 
-**Пакет:** `@mantine/hooks`  
-**Назначение:** Boolean state с handlers open/close/toggle.
+**Package:** `@mantine/hooks`
+Boolean state with open/close/toggle handlers.
 
 ## API
 
@@ -12,15 +12,15 @@ const [opened, { open, close, toggle }] = useDisclosure(initialState?, callbacks
 { onOpen?: () => void; onClose?: () => void; }
 ```
 
-## Правила
+## Rules
 
-- Предпочитать вместо `useState` для boolean open/close state
-- Совместим с Modal `opened`/`onClose`, Drawer, Popover, Collapse, Burger
-- `toggle` — один handler для переключения
-- `open`/`close` — явное управление
-- Callbacks `onOpen`/`onClose` вызываются при смене состояния; `open`/`close` ничего не делают, если состояние уже совпадает
+- Prefer over `useState` for boolean open/close state
+- Compatible with Modal `opened`/`onClose`, Drawer, Popover, Collapse, Burger
+- `toggle` — single handler for toggling
+- `open`/`close` — explicit control
+- Callbacks `onOpen`/`onClose` fire on state change; `open`/`close` are no-ops if state already matches
 
-## Пример
+## Example
 
 ```tsx
 import { useDisclosure } from '@mantine/hooks';

@@ -30,10 +30,10 @@
 
 ```tsx
 <Button variant="filled" loading={isSubmitting} leftSection={<IconSend />}>
-  Отправить
+  Submit
 </Button>
 
 <Button component={Link} href="/back">
-  Назад
+  Back
 </Button>
 ```

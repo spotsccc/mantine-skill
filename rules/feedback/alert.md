@@ -26,14 +26,14 @@
 
 ```tsx
 <Alert
-  title="Ошибка сохранения"
+  title="Save error"
   icon={<IconAlertCircle />}
   color="red"
   variant="light"
   withCloseButton
-  closeButtonLabel="Закрыть"
+  closeButtonLabel="Close"
   onClose={() => setShow(false)}
 >
-  Не удалось сохранить изменения. Попробуйте ещё раз.
+  Failed to save changes. Please try again.
 </Alert>
 ```

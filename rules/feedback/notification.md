@@ -22,15 +22,15 @@ import { notifications } from '@mantine/notifications';
 
 // Show toast
 const id = notifications.show({
-  title: 'Сохранено',
-  message: 'Изменения применены',
+  title: 'Saved',
+  message: 'Changes applied',
   color: 'green',
   icon: <IconCheck />,
   autoClose: 4000,
   position: 'top-right',
 });
 
-notifications.update(id, { message: 'Обновлённый текст', loading: false });
+notifications.update(id, { message: 'Updated text', loading: false });
 notifications.hide(id);
 ```
 
@@ -47,11 +47,11 @@ notifications.hide(id);
 import { notifications } from '@mantine/notifications';
 
 const id = notifications.show({
-  title: 'Отправка...',
-  message: 'Пожалуйста, подождите',
+  title: 'Sending...',
+  message: 'Please wait',
   loading: true,
   autoClose: false,
 });
 // later:
-notifications.update(id, { message: 'Готово!', color: 'green', loading: false, autoClose: 3000 });
+notifications.update(id, { message: 'Done!', color: 'green', loading: false, autoClose: 3000 });
 ```

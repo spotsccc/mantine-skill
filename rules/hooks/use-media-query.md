@@ -1,7 +1,7 @@
 # useMediaQuery
 
-**Пакет:** `@mantine/hooks`  
-**Назначение:** Подписка на media query (window.matchMedia). **Не SSR-safe!**
+**Package:** `@mantine/hooks`
+Subscribe to media query (window.matchMedia). **NOT SSR-safe!**
 
 ## API
 
@@ -9,18 +9,18 @@
 const matches = useMediaQuery(query, initialValue?, options?);
 
 // options
-{ getInitialValueInEffect?: boolean }  // false — использовать initialValue на первом рендере
+{ getInitialValueInEffect?: boolean }  // false — use initialValue on first render
 ```
 
-## Правила
+## Rules
 
-- **SSR:** на сервере возвращает `false` (или `initialValue`). Вызывает hydration mismatch в Next.js при разных значениях на сервере и клиенте
-- **Использовать ТОЛЬКО** в client-only UI: Tooltip props, Modal size и т.п. Не для responsive layout
-- Для responsive layout — CSS: `hiddenFrom`/`visibleFrom`, responsive style props, breakpoints в CSS modules
-- `initialValue` + `getInitialValueInEffect: false` смягчает SSR, но mismatch всё равно возможен
-- Для breakpoints Mantine использовать `em()` из `@mantine/core`: `em(768)` → `(max-width: 48em)`
+- **SSR:** Returns `false` (or `initialValue`) on server. Causes hydration mismatch in Next.js when server and client values differ
+- **Use ONLY** in client-only UI: Tooltip props, Modal size, etc. Not for responsive layout
+- For responsive layout use CSS: `hiddenFrom`/`visibleFrom`, responsive style props, breakpoints in CSS modules
+- `initialValue` + `getInitialValueInEffect: false` mitigates SSR issues, but mismatch is still possible
+- For Mantine breakpoints use `em()` from `@mantine/core`: `em(768)` → `(max-width: 48em)`
 
-## Пример (безопасное использование)
+## Example (safe usage)
 
 ```tsx
 'use client';

@@ -26,8 +26,8 @@
 
 ```tsx
 <TagsInput
-  label="Теги"
-  data={['путешествия', 'отдых', 'пляж']}
+  label="Tags"
+  data={['travel', 'vacation', 'beach']}
   splitChars={[',', ' ', ';']}
   maxTags={10}
   value={tags}
