@@ -1,17 +1,11 @@
----
-description: Mantine List — styled ordered or unordered list. Icon sets default marker.
----
-
 # List
 
-## Purpose
-
-Styled ordered or unordered list with custom markers.
+**Purpose:** Styled ordered or unordered list with custom markers.
 
 ## Key props
 
-| Prop | Type | Notes |
-|------|------|-------|
+| Prop | Type | Description |
+|------|------|-------------|
 | `type` | "ordered" \| "unordered" | ol vs ul |
 | `icon` | ReactNode | Global marker for all items |
 | `spacing` | "xs"\..."xl" | Gap between items |
@@ -20,7 +14,7 @@ Styled ordered or unordered list with custom markers.
 | `withPadding` | boolean | Padding for nested lists |
 | `listStyleType` | string | CSS list-style-type override |
 
-## Rules
+## Rules and gotchas
 
 - `icon` on List sets default marker for all List.Item.
 - List.Item can override with its own `icon` prop.
