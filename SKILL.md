@@ -1,6 +1,7 @@
 ---
 name: mantine-ui
 description: Rules and best practices for Mantine v8 UI library. Use when working with @mantine/core, @mantine/hooks, @mantine/notifications components, or when building UI with Mantine. Covers styling, theming, responsive design, and component-specific patterns.
+user-invocable: false
 license: MIT
 metadata:
   author: spotsccc
