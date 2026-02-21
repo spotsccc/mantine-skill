@@ -10,7 +10,11 @@
 - **Choose many from list** → [MultiSelect](multi-select.md)
 - **Free-form tags** → [TagsInput](tags-input.md) (allows arbitrary values)
 - **Number entry** → [NumberInput](number-input.md) (min/max/step)
+- **Password** → [PasswordInput](password-input.md) (visibility toggle)
 - **Boolean toggle** → [Checkbox](checkbox.md) or [Switch](switch.md)
+- **Single choice from group** → [Radio](radio.md) (Radio.Group required)
+- **Range value** → [Slider](slider.md) (marks, RangeSlider for two thumbs)
+- **File upload** → [FileInput](file-input.md) (accept, multiple)
 
 ## Common patterns
 
@@ -33,3 +37,7 @@
 | NumberInput | [number-input.md](number-input.md) | Numeric input with increment/decrement |
 | Checkbox | [checkbox.md](checkbox.md) | Boolean toggle (checkmark) |
 | Switch | [switch.md](switch.md) | Boolean toggle (switch) |
+| PasswordInput | [password-input.md](password-input.md) | Password with visibility toggle |
+| Radio | [radio.md](radio.md) | Single selection from group |
+| Slider | [slider.md](slider.md) | Value selection from range |
+| FileInput | [file-input.md](file-input.md) | File selection input |
