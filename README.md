@@ -66,6 +66,17 @@ Each category directory contains:
 - **README.md** — decision tree for choosing the right component, comparison tables, common patterns
 - **Component files** — key props, rules/gotchas, and code examples
 
+## Versioning
+
+This skill targets **Mantine v8**. The skill version in `SKILL.md` frontmatter (`metadata.version`) tracks the skill's own evolution, not the Mantine version.
+
+When a new major Mantine version is released (e.g. v9):
+- A new branch (e.g. `mantine-v9`) will be created for the updated skill
+- The `main` branch will continue to track the latest stable Mantine version
+- Breaking API changes in Mantine will be reflected in updated component files
+
+To pin to a specific Mantine version, use a tagged release or branch.
+
 ## License
 
 [MIT](LICENSE)
