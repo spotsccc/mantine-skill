@@ -1,7 +1,3 @@
----
-description: Data display components — tables, badges, images, avatars, timelines, lists, accordions. Use for displaying structured data and status indicators.
----
-
 # Data Display
 
 ## Decision tree

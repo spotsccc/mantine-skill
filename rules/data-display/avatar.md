@@ -1,17 +1,11 @@
----
-description: Mantine Avatar — user photo, initials, or placeholder. Avatar.Group for stacking.
----
-
 # Avatar
 
-## Purpose
-
-User photo, initials, or placeholder. Avatar.Group stacks multiple avatars.
+**Purpose:** User photo, initials, or placeholder. Avatar.Group stacks multiple avatars.
 
 ## Key props
 
-| Prop | Type | Notes |
-|------|------|-------|
+| Prop | Type | Description |
+|------|------|-------------|
 | `src` | string | Image URL |
 | `alt` | string | **Required** for accessibility |
 | `name` | string | Auto-initials when no src |
@@ -20,7 +14,7 @@ User photo, initials, or placeholder. Avatar.Group stacks multiple avatars.
 | `radius` | "xs"\..."xl" \| number | Circle or rounded |
 | `allowedInitialsColors` | string[] | Palette for auto color |
 
-## Rules
+## Rules and gotchas
 
 - Shows initials from `name` when no `src`.
 - `color="initials"` picks color deterministically from name.

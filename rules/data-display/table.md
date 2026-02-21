@@ -1,16 +1,10 @@
----
-description: Mantine Table — themed HTML table with sticky header, stripes, borders. Use Table.ScrollContainer for horizontal scroll.
----
-
 # Table
 
-## Purpose
-
-Themed HTML table for tabular data. Supports sticky headers, stripes, borders, responsive scroll.
+**Purpose:** Themed HTML table for tabular data. Supports sticky headers, stripes, borders, responsive scroll.
 
 ## Key props
 
-| Prop | Type | Notes |
+| Prop | Type | Description |
 |------|------|-------|
 | `data` | `{ head, body, foot, caption }` | Shorthand: use OR compound components |
 | `stickyHeader` | boolean | Fix thead on scroll |
@@ -29,7 +23,7 @@ Themed HTML table for tabular data. Supports sticky headers, stripes, borders, r
 
 `Table.Thead`, `Table.Tbody`, `Table.Tfoot`, `Table.Tr`, `Table.Th`, `Table.Td`, `Table.Caption`, `Table.ScrollContainer`
 
-## Rules
+## Rules and gotchas
 
 - Use `data` prop **OR** compound components — not both.
 - **Table.ScrollContainer** with `minWidth` for responsive horizontal scroll; `type="native"` for native scrollbar.

@@ -1,7 +1,3 @@
----
-description: Overlay components — modals, drawers, popovers, tooltips, hover cards. Use for dialogs, side panels, anchored popups, and hints.
----
-
 # Overlays
 
 ## Decision tree

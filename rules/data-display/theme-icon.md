@@ -1,17 +1,11 @@
----
-description: Mantine ThemeIcon — icon with colored background. Use for decorative icons alongside text.
----
-
 # ThemeIcon
 
-## Purpose
-
-Icon with colored background. Use for decorative icons alongside text (e.g. feature lists).
+**Purpose:** Icon with colored background. Use for decorative icons alongside text (e.g. feature lists).
 
 ## Key props
 
-| Prop | Type | Notes |
-|------|------|-------|
+| Prop | Type | Description |
+|------|------|-------------|
 | `variant` | "filled" \| "light" \| "outline" \| "gradient" \| "subtle" \| "default" \| "white" | Background style |
 | `color` | string | Theme color |
 | `size` | "xs"\..."xl" \| number | Container size |
@@ -19,7 +13,7 @@ Icon with colored background. Use for decorative icons alongside text (e.g. feat
 | `gradient` | object | For variant="gradient" |
 | `autoContrast` | boolean | Adjust icon contrast |
 
-## Rules
+## Rules and gotchas
 
 - `size` controls **container** size; set icon size separately (e.g. `size="sm"` on Icon).
 - Supports all Mantine color variants.

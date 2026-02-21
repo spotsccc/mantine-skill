@@ -1,17 +1,11 @@
----
-description: Mantine Badge — status label, tag, or count. Variants: filled, light, outline, dot, gradient.
----
-
 # Badge
 
-## Purpose
-
-Status label, tag, or count. Polymorphic, supports icons.
+**Purpose:** Status label, tag, or count. Polymorphic, supports icons.
 
 ## Key props
 
-| Prop | Type | Notes |
-|------|------|-------|
+| Prop | Type | Description |
+|------|------|-------------|
 | `variant` | "filled" \| "light" \| "outline" \| "dot" \| "transparent" \| "gradient" \| "default" \| "white" | Controls appearance |
 | `color` | string | Theme color or CSS color |
 | `size` | "xs"\..."xl" | Size |
@@ -22,7 +16,7 @@ Status label, tag, or count. Polymorphic, supports icons.
 | `gradient` | object | For variant="gradient" |
 | `autoContrast` | boolean | Adjust text contrast; only for filled |
 
-## Rules
+## Rules and gotchas
 
 - Polymorphic: `component` prop to change root element.
 - `circle` makes it circular (min-width equals height).

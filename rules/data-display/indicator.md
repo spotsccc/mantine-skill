@@ -1,17 +1,11 @@
----
-description: Mantine Indicator — notification dot or count badge on element. Wrap target as child.
----
-
 # Indicator
 
-## Purpose
-
-Notification dot or count badge overlaid on an element (e.g. Avatar, IconButton).
+**Purpose:** Notification dot or count badge overlaid on an element (e.g. Avatar, IconButton).
 
 ## Key props
 
-| Prop | Type | Notes |
-|------|------|-------|
+| Prop | Type | Description |
+|------|------|-------------|
 | `label` | ReactNode | Badge content (number, text); omitting shows dot |
 | `color` | string | Badge color |
 | `size` | number | Badge size |
@@ -22,7 +16,7 @@ Notification dot or count badge overlaid on an element (e.g. Avatar, IconButton)
 | `inline` | boolean | For fixed-width targets |
 | `withBorder` | boolean | Border around badge |
 
-## Rules
+## Rules and gotchas
 
 - Wrap the target element as a single child.
 - Use `inline` when target has fixed width.

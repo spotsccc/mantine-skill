@@ -1,17 +1,11 @@
----
-description: Mantine Image — image with optional fallback. Set alt for accessibility.
----
-
 # Image
 
-## Purpose
-
-Image component with optional fallback on load error.
+**Purpose:** Image component with optional fallback on load error.
 
 ## Key props
 
-| Prop | Type | Notes |
-|------|------|-------|
+| Prop | Type | Description |
+|------|------|-------------|
 | `src` | string | Image URL |
 | `alt` | string | **Required** for accessibility |
 | `fallbackSrc` | string | Shown on load error |
@@ -20,7 +14,7 @@ Image component with optional fallback on load error.
 | `h` \| `w` | string \| number | Dimensions |
 | `onError` | handler | Custom error handling |
 
-## Rules
+## Rules and gotchas
 
 - **Always set `alt`** for accessibility.
 - Set `h` (height) to prevent layout shift during load.

@@ -1,17 +1,11 @@
----
-description: Mantine Timeline — chronological event list. Children must be Timeline.Item.
----
-
 # Timeline
 
-## Purpose
-
-Chronological event list. Highlights items up to the active step.
+**Purpose:** Chronological event list. Highlights items up to the active step.
 
 ## Key props (Timeline)
 
-| Prop | Type | Notes |
-|------|------|-------|
+| Prop | Type | Description |
+|------|------|-------------|
 | `active` | number | Index of current step (highlights 0..active) |
 | `color` | string | Line and bullet color |
 | `lineWidth` | number | Connector line width |
@@ -20,13 +14,13 @@ Chronological event list. Highlights items up to the active step.
 
 ## Key props (Timeline.Item)
 
-| Prop | Type | Notes |
-|------|------|-------|
+| Prop | Type | Description |
+|------|------|-------------|
 | `title` | ReactNode | Item title |
 | `bullet` | ReactNode | Custom marker (Icon, Avatar, ThemeIcon) |
 | `lineVariant` | "solid" \| "dashed" \| "dotted" | Connector style |
 
-## Rules
+## Rules and gotchas
 
 - Children must be direct **Timeline.Item** elements.
 - `active` highlights items from index 0 up to (and including) that index.

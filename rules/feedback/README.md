@@ -1,7 +1,3 @@
----
-description: Feedback components — alerts, notifications, loaders, skeletons, progress. Use for user feedback, loading states, and status indicators.
----
-
 # Feedback
 
 ## Decision tree

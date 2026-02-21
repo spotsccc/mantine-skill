@@ -1,17 +1,11 @@
----
-description: Mantine Accordion — collapsible content sections. Compound: Accordion.Item, Accordion.Control, Accordion.Panel.
----
-
 # Accordion
 
-## Purpose
-
-Collapsible content sections. Controlled or uncontrolled.
+**Purpose:** Collapsible content sections. Controlled or uncontrolled.
 
 ## Key props
 
-| Prop | Type | Notes |
-|------|------|-------|
+| Prop | Type | Description |
+|------|------|-------------|
 | `value` \| `defaultValue` | string \| string[] | Active item(s) |
 | `onChange` | handler | For controlled mode |
 | `multiple` | boolean | Allow multiple open items |
@@ -26,7 +20,7 @@ Collapsible content sections. Controlled or uncontrolled.
 
 `Accordion.Item` (requires `value`), `Accordion.Control`, `Accordion.Panel`
 
-## Rules
+## Rules and gotchas
 
 - **Do NOT** put interactive elements (buttons, links) inside Accordion.Control; use only text or passive content.
 - With `multiple={false}`: `value` is `string | null`.
