@@ -180,17 +180,19 @@ Read decision tree: [rules/hooks/README.md](rules/hooks/README.md)
 
 ## How to Use
 
-Read individual rule files for detailed props, gotchas, and code examples:
+1. **Start here:** Read [rules/best-practices.md](rules/best-practices.md) for styling priority and patterns
+2. **Find the right component:** Open the category `README.md` for a decision tree
+3. **Read component file:** Each file has key props, rules/gotchas, and code examples
 
+Navigation pattern for agents:
 ```
-rules/best-practices.md
-rules/layout/container.md
-rules/inputs/select.md
-rules/hooks/use-disclosure.md
+SKILL.md → rules/{category}/README.md → rules/{category}/{component}.md
 ```
+
+Do NOT read all files at once — navigate to the relevant category first, then read only the needed component file.
 
 Each category directory contains:
 - `README.md` — decision tree for choosing the right component, comparison tables, common patterns
 - Component files — key props, rules/gotchas, and code examples
 
-Styling priority: **Component props > Style props > CSS Modules > style prop**. Read [rules/best-practices.md](rules/best-practices.md) first.
+Styling priority: **Component props > Style props > CSS Modules > style prop**.
